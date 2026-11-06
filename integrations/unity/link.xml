@@ -1,0 +1,5 @@
+<linker>
+  <!-- Ponto inicial conservador para o linker; precisa ser validado em build Unity IL2CPP real. -->
+  <assembly fullname="Stintoria.Core" preserve="all" />
+  <assembly fullname="Stintoria.ClientBridge" preserve="all" />
+</linker>

@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "STINTORIA — Prévia 3D Kart"
+description = "Demonstração visual local de kart construída com Babylon.js. A simulação oficial depende da integração validada do motor C# WebAssembly."
+version = "1.0.0"
+id = "artifacts/stintoria-web"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19180
+
+[services.development]
+run = "pnpm --filter @workspace/stintoria-web run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/stintoria-web", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/stintoria-web/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19180"
+BASE_PATH = "/"

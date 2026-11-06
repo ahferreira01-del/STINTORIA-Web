@@ -1,0 +1,9 @@
+- [Confiança dos saves offline](offline-save-trust.md) — saves devem comprovar consistência por replay, sem prometer antifraude ou anti-rollback.
+- [Identidade e histórico de carreira](career-history-identity.md) — carreira começa em novo elenco confirmado; não reatribuir pontos de campeonatos antigos.
+- [Compatibilidade de saves](save-compatibility.md) — extensões opt-in versionadas devem preservar os bytes legados e comprovar também escolhas pendentes.
+- [Confirmação no navegador](browser-save-confirmation.md) — commit lógico não é durabilidade física; confirmação perdida exige reler/carregar, não repetir decisão.
+- [Direção do cliente visual](browser-client-direction.md) — Babylon no navegador; comandos HTTP C# são apenas dev e não provam WASM, offline ou posição 3D oficial.
+- [Validação WebGL no navegador](browser-webgl-validation.md) — não confundir limitações do navegador de captura com falha do app; confirmar em Chromium real com WebGL.
+- [E2E de carreira no navegador](career-browser-e2e.md) — usar checkpoint oficial C# para testar transição de etapas no Chromium e separar rejeições HTTP 400 esperadas de falhas reais.
+- [Evidência da regressão C#](csharp-test-run-evidence.md) — só declarar suíte completa quando a mesma execução exibir total final e exit code verificável.
+- [Ponte C# para comandos frequentes](csharp-bridge-runtime.md) — evitar rebuild do host a cada setor, com fallback quando os fontes C# mudarem.

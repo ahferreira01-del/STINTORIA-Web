@@ -1,0 +1,5 @@
+[
+  { "setor": 1, "piloto": "p01", "ritmo": "conservar" },
+  { "setor": 13, "piloto": "p01", "ritmo": "equilibrado" },
+  { "setor": 28, "piloto": "p01", "ritmo": "atacar" }
+]
